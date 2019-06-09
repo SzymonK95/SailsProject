@@ -1,6 +1,16 @@
-<h1> Car </h1>
-<div>Name: <%= row.name %> </div>
-<div>Price: <%= row.price %> </div>
+<h1> Car <%= row.name %></h1>
 
-<a href="/cars/edit/<%= row.id %>">Edit</a> | 
-<a href="/cars">Back</a>
+<table class="table">
+    <tr >
+        <th>Name</th>
+        <th>Price</th>
+        <th></th>
+    </tr>
+        <tr>
+            <td><%= row.name %></td>
+            <td><%= row.price %></td>
+            <td><a class="btn btn-light" href="/cars/edit/<%= row.id %>">Edit</a></td>
+        </tr>
+</table>
+
+<a class="btn btn-dark" href="/cars">Wróć</a>

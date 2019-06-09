@@ -1,7 +1,7 @@
 <h1>Listing cars </h1>
 
-<table>
-    <tr>
+<table class="table">
+    <tr >
         <th>Name</th>
         <th>Price</th>
         <th></th>
@@ -11,10 +11,10 @@
         <tr>
             <td><%= row.name %></td>
             <td><%= row.price %></td>
-            <td><a href="/cars/show/<%= row.id %>">Show</a></td>
-            <td><a href="/cars/edit/<%= row.id %>">Edit</a></td>
+            <td><a class="btn btn-info" href="/cars/show/<%= row.id %>">Show</a></td>
+            <td><a class="btn btn-light" href="/cars/edit/<%= row.id %>">Edit</a></td>
     <% }) %>
         </tr>
 </table>
 
-<a href="/cars/new">New Car</a>
+<a class="btn btn-dark" href="/cars/new">New Car</a>

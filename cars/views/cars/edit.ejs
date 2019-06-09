@@ -1,9 +1,10 @@
 <h1> Editing car</h1>
-<form action="/cars/update/<%= row.id %>" method="POST">
+<div style="width: 40%">
+    <form action="/cars/update/<%= row.id %>" method="POST">
 
-	<div>Name: <input value="<%= row.name %>" name="name" type="text"/></div>
-	<div>Price: <input value="<%= row.price %>" name="price" type="number"/></div>
-	<input type="submit" value="Zapisz zmiany"/>
-</form>
-
-<a href="/cars">Back</a>
+        <div>Name: <input class="form-control" value="<%= row.name %>" name="name" type="text"/></div>
+        <div>Price: <input class="form-control" value="<%= row.price %>" name="price" type="number"/></div>
+        <input class="btn btn-primary" type="submit" value="Zapisz zmiany"/>
+    </form>
+</div>
+<a class="btn btn-dark" href="/cars">Wróć</a>
