@@ -1,0 +1,9 @@
+<h1> Editing car</h1>
+<form action="/cars/update/<%= row.id %>" method="POST">
+
+	<div>Name: <input value="<%= row.name %>" name="name" type="text"/></div>
+	<div>Price: <input value="<%= row.price %>" name="price" type="number"/></div>
+	<input type="submit"/>
+</form>
+
+<a href="/cars">Back</a>

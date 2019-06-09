@@ -20,7 +20,7 @@ var CarsController = {
         Car.create(params, function rowCreated(err, createdRow) {
             if(err) return res.send(err, 500);
 
-            res.redirect('/car');
+            res.redirect('/cars');
         });
     },
 
@@ -60,7 +60,7 @@ var CarsController = {
         if(!id) return res.send("No id specified!", 500);
 
         Car.update(id, params, function rowUpdated(err, updatedRow) {
-            res.redirect('/car');
+            res.redirect('/cars');
         });
     },
 
@@ -74,7 +74,7 @@ var CarsController = {
 
             Car.destroy(id, function rowDestroyed(err) {
                 if(err) return res.send(err, 500);
-                return res.reditect('/car');
+                return res.reditect('/cars');
             });
         })
     }
