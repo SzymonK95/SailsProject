@@ -74,7 +74,7 @@ var CarsController = {
 
             Car.destroy(id, function rowDestroyed(err) {
                 if(err) return res.send(err, 500);
-                return res.reditect('/cars');
+                return res.redirect('/cars');
             });
         })
     }

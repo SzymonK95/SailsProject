@@ -7,7 +7,7 @@
 
 module.exports = {
 
-    tableName: 'Cars',
+    tableName: 'Car',
     primaryKey: 'id',
     
     attributes: {
