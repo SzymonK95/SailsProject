@@ -1,0 +1,20 @@
+<h1>Listing cars </h1>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <% _.each(model, function(row) { %>
+        <tr>
+            <td><%= row.name %></td>
+            <td><%= row.price %></td>
+            <td><a href="/car/show/<%= row.id %>">Show</a></td>
+            <td><a href="/car/edit/<%= row.id %>">Edit</a></td>
+    <% }) %>
+        </tr>
+</table>
+
+<a href="/car/new">New Car</a>
